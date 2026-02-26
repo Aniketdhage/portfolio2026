@@ -1,0 +1,261 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 70px;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.gradient-blob {
+  position: absolute;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  opacity: 0.7;
+  filter: blur(40px);
+}
+
+.blob-1 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  top: -50px;
+  right: -50px;
+}
+
+.blob-2 {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  bottom: -100px;
+  left: -100px;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  z-index: 2;
+  align-items: center;
+}
+
+.hero-text {
+  color: white;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #00d4ff;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid #667eea;
+}
+
+.btn-secondary:hover {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.hero-social {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.hero-social a {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.hero-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.code-window {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(102, 126, 234, 0.3);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  font-family: 'Courier New', monospace;
+  color: #00d4ff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  min-width: 300px;
+}
+
+.code-header {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.code-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.code-dot.red {
+  background: #ff6b6b;
+}
+
+.code-dot.yellow {
+  background: #ffd93d;
+}
+
+.code-dot.green {
+  background: #6bcf7f;
+}
+
+.code-body {
+  line-height: 1.8;
+  font-size: 0.9rem;
+}
+
+.code-body p {
+  margin: 0.5rem 0;
+}
+
+.indent {
+  margin-left: 2rem;
+}
+
+.code-keyword {
+  color: #ff6b6b;
+}
+
+.code-function {
+  color: #00d4ff;
+}
+
+.code-string {
+  color: #6bcf7f;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #00d4ff;
+  font-size: 0.9rem;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 70px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-illustration {
+    margin-top: 2rem;
+  }
+
+  .code-window {
+    min-width: 250px;
+  }
+
+  .blob-1 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .blob-2 {
+    width: 150px;
+    height: 150px;
+  }
+}
