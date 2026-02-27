@@ -21,7 +21,7 @@ const About = () => {
         transition={{ duration: 0.7, delay: 0.2 }}
         viewport={{ once: true }}
       >
-        React.js and Next.js Front-End Developer with 2.5+ years of experience
+        React.js and Next.js Front-End Developer with 3+ years of experience
         building scalable, SEO-friendly, and high-performance web applications.
         Strong expertise in React.js, Next.js fundamentals, modern JavaScript
         (ES6+), component-driven architecture, and REST API integration.

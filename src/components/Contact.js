@@ -22,13 +22,37 @@ const Contact = () => (
       viewport={{ once: true }}
       style={{ maxWidth: '420px', margin: '0 auto', textAlign: 'center' }}
     >
-      Ready to elevate your team? Hire a passionate Front-End Developer for beautiful, scalable results.
+      Ready to elevate your team? Hire a passionate Front-End Developer for
+      beautiful, scalable results.
     </motion.p>
     <div className="contact-info">
-      <span><FaEnvelope /> Email: <a href="mailto:aniketdhage90@gmail.com">aniketdhage90@gmail.com</a></span>
-      <span><FaPhone /> Phone: <a href="tel:+919673517187">+91 9673517187</a></span>
-      <span><FaLinkedin /> LinkedIn: <a href="https://linkedin.com/in/aniket-dhage" target="_blank" rel="noopener noreferrer">aniket-dhage</a></span>
-      <span><FaWhatsapp /> WhatsApp: <a href="https://wa.me/919673517187" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></span>
+      <span>
+        <FaEnvelope /> Email:{' '}
+        <a href="mailto:aniketdhage90@gmail.com">aniketdhage90@gmail.com</a>
+      </span>
+      <span>
+        <FaPhone /> Phone: <a href="tel:+919673517187">+91 9673517187</a>
+      </span>
+      <span>
+        <FaLinkedin /> LinkedIn:{' '}
+        <a
+          href="https://linkedin.com/in/aniket-dhage"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          aniket-dhage
+        </a>
+      </span>
+      <span>
+        <FaWhatsapp /> WhatsApp:{' '}
+        <a
+          href="https://wa.me/919673517187"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Chat on WhatsApp
+        </a>
+      </span>
     </div>
   </section>
 );

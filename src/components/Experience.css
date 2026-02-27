@@ -86,3 +86,11 @@
     max-width: unset;
   }
 }
+
+@media (max-width: 768px) {
+  .experience-title {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+}

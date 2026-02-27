@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 import './Hero.css';
+import resumePDF from '../Assets/Aniket_Dhage_3_26.pdf';
 
 const Hero = () => {
   const containerVariants = {
@@ -63,24 +64,17 @@ const Hero = () => {
 
           <motion.p className="hero-description" variants={itemVariants}>
             Building beautiful, scalable, and high-performance web applications
-            with 2.5+ years of professional experience
+            with 3+ years of professional experience
           </motion.p>
 
           <motion.div className="hero-buttons" variants={itemVariants}>
             <motion.button
-              className="btn btn-primary"
-              whileHover={{
-                scale: 1.05,
-                boxShadow: '0 10px 30px rgba(102, 126, 234, 0.4)',
-              }}
-              whileTap={{ scale: 0.95 }}
-            >
-              View My Work
-            </motion.button>
-            <motion.button
               className="btn btn-secondary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => {
+                window.open(resumePDF, '_blank');
+              }}
             >
               Download Resume
             </motion.button>
@@ -136,10 +130,11 @@ const Hero = () => {
             <div className="code-body">
               <p>
                 <span className="code-keyword">function</span>{' '}
-                <span className="code-function">buildAwesome</span>() {'{'}
+                <span className="code-function">hireMe</span>() {'{'}
               </p>
               <p className="indent">
-                return <span className="code-string">"Portfolio"</span>;
+                return{' '}
+                <span className="code-string">"Let's work together!"</span>;
               </p>
               <p>{'}'}</p>
             </div>
